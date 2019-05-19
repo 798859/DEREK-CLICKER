@@ -5,31 +5,30 @@
 </head>
 <body>
   <h1 id="dereks">0 dereks</h1>
-	var dereks = 0;
-        <button onclick="adddereks(1);">Click!</button>
-	<script type="text/javascript"</script>		
+        <button onclick="adddereks(1)">Click!</button>
+        <script type="text/javascript">
+            var dereks = 0;
+            
 			function adddereks(amount) {
                 dereks += amount;
-                update();
+                document.getElementById("dereks").innerHTML = dereks + " dereks";
             }
 			  function update() {
-                document.getElementById("dereks").innerHTML = dereks + " dereks";
+                document.getElementById("clicks").innerHTML = clicks + " clicks";
                 save();
             }
             function save() {
-                localStorage.setItem("dereks", parseInt(dereks));
+                localStorage.setItem("clicks", parseInt(clicks));
             }
             function load(){
-                dereks = parseInt(localStorage.getItem("dereks"));
+                clicks = parseInt(localStorage.getItem("clicks"));
                 update();
             }
 			
-				load();
-				
+			
 <!--<hr>--> 
 
 
 </script>
 
 </body>	
-</html>
