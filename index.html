@@ -14,14 +14,14 @@
                 document.getElementById("dereks").innerHTML = dereks + " dereks";
             }
 			  function update() {
-                document.getElementById("clicks").innerHTML = clicks + " clicks";
+                document.getElementById("dereks").innerHTML = dereks + "dereks";
                 save();
             }
             function save() {
-                localStorage.setItem("clicks", parseInt(clicks));
+                localStorage.setItem("dereks", parseInt(dereks));
             }
             function load(){
-                clicks = parseInt(localStorage.getItem("clicks"));
+                clicks = parseInt(localStorage.getItem("dereks"));
                 update();
             }
 			
