@@ -4,23 +4,23 @@
 <title>DEREK CLICKER</title>
 </head>
 <body>
-  <h1 id="Dereks">0 Dereks</h1>
-	var Dereks = 0;
-        <button onclick="addDereks(1);">Click!</button>
+  <h1 id="dereks">0 dereks</h1>
+	var dereks = 0;
+        <button onclick="adddereks(1);">Click!</button>
 	<script type="text/javascript"</script>		
-			function addDereks(amount) {
-                Dereks += amount;
+			function adddereks(amount) {
+                dereks += amount;
                 update();
             }
 			  function update() {
-                document.getElementById("Dereks").innerHTML = Dereks + " Dereks";
+                document.getElementById("dereks").innerHTML = dereks + " dereks";
                 save();
             }
             function save() {
-                localStorage.setItem("Dereks", parseInt(Dereks));
+                localStorage.setItem("dereks", parseInt(dereks));
             }
             function load(){
-                Dereks = parseInt(localStorage.getItem("Dereks"));
+                dereks = parseInt(localStorage.getItem("dereks"));
                 update();
             }
 			
