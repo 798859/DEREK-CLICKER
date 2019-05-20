@@ -15,10 +15,11 @@
             }
 			  function update() {
                 document.getElementById("dereks").innerHTML = dereks + "dereks";
-                save();
+              
             }
             function save() {
                 localStorage.setItem("dereks", parseInt(dereks));
+		    save();
             }
             function load(){
                 dereks = parseInt(localStorage.getItem("dereks"));
