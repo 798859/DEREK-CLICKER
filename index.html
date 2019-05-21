@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>DEREK CLICKER</title>
-</head>
-<body>
-  <h1 id="dereks">0 dereks</h1>
-        <button onclick="adddereks(1)">Click!</button>
+    <head>
+        <title>DEREK CLICKER</title>
+    </head>
+    <body>
+        <h1 id="dereks">0 dereks</h1>
+        <button onclick="addDereks(1)">Click!</button>
         <script type="text/javascript">
-        load();
-
             var dereks = 0;
-
-            function adddereks(amount) {
+            function addDereks(amount) {
                 dereks += amount;
                 update();
             }
-              function update() {
-                document.getElementById("dereks").innerHTML = dereks + "dereks";
+            function update() {
+                document.getElementById("dereks").innerHTML = dereks + " dereks";
                 save();
             }
             function save() {
                 localStorage.setItem("dereks", parseInt(dereks));
-
             }
-                  
-          function load(){
+            function load(){
                 dereks = parseInt(localStorage.getItem("dereks"));
                 if(isNaN(dereks))dereks = 0;
                 update();
-
-
-<!--<hr>--> 
-
-
-</script>
-
-</body>
+            }
+            load();
+    </script>
+    </body>
 </html>
-    
