@@ -23,10 +23,11 @@
                 localStorage.setItem("dereks", parseInt(dereks));
 
             }
-            function load(){
+                  
+          function load(){
                 dereks = parseInt(localStorage.getItem("dereks"));
+                if(isNaN(dereks))dereks = 0;
                 update();
-            }
 
 
 <!--<hr>--> 
