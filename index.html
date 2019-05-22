@@ -11,7 +11,7 @@
             function addDereks(amount) {
                 dereks += amount;
                 update();
-              
+            }
             function update() {
                 document.getElementById("dereks").innerHTML = dereks + " dereks";
                 save();
@@ -24,7 +24,6 @@
                 if(isNaN(dereks))dereks = 0;
                 update();
             }
-            
             load();
     </script>
     </body>
